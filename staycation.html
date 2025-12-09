@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="staycation.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Park City Utah</title>
@@ -73,14 +72,26 @@
             <li>Park City Mountain also has rides like a rollercoaster and zipline during the summer and winter</li>
         </ul>
 
-        <button id="button" onclick=""> For Additional Info Click On ME!</button>
-    </div>
+        </div>
+    
     <div id="Image_wrapper">
-            <img id="Mountain_3" alt="Park City Utah" src="https://www.skiutah.com/blog/authors/lexi/ski-utah-resort-histories-park-city/pictures/160111%20-%20Jup-KK-ML-6%20(1).jpg/inline-display"/>
+            <img id="Mountain_3" alt="Park City Utah" onmouseover={change()} src="https://www.skiutah.com/blog/authors/lexi/ski-utah-resort-histories-park-city/pictures/160111%20-%20Jup-KK-ML-6%20(1).jpg/inline-display"/>
             <img id="mountain" alt="Mountain" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Park_City_overview.jpg"/>
             <img id="Mountain_2" alt="Park City Utah" src="https://parkcity.gov/home/showpublishedimage/52280/637455453827930000"/>
     </div>
 
+    <button id="button" onclick="goToInfo()">For Additional Info Click On ME!</button>
+
   </div>  
+    <script>
+        function goToInfo() {
+         window.location.href = "parkcity_info.html";
+        }
+        function change(){
+                document.getElementById("Mountain_3").src = "https://zacalife.com/cdn/shop/articles/Blog_Image_-_Park_City_Altitude_Sickness_2000x1000_c291e0ae-fdae-471e-9834-8218e91729a7_2048x.jpg?v=1747785428"
+                        }
+                        
+    </script>
+
 </body>
 </html>
