@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="staycation.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Park City Utah</title>
@@ -10,36 +11,76 @@
 
         }
         body{
-            background-color: rgb(92, 49, 49);
+            background-color: rgb(100, 99, 99);
+            color: rgb(49, 49, 49);
+            font-size: 30px;
             
         }
-        #text_wrapper{
+        img{
+            height: 400px;
+            width: auto;
+            padding: 50px;
+            border:20px solid;
+            border-color: rgb(255, 255, 255);
+            background-color: rgb(49, 49, 49);
+
+        }
+        #content{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        h1{
             
+            border:20px ridge;
+            border-color: rgb(255, 255, 255);
+            background-color: rgb(255, 255, 255);
+        }
+        h2{
+            border:20px ridge;
+            border-color: rgb(255, 255, 255);
+            background-color: rgb(255, 255, 255);
+        }
+        #button{
+            height: 100px;
+            width: auto;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 40px;
+            color: rgb(49, 49, 49) ;
+            border:20px ridge;
+            border-color: rgb(255, 255, 255);
         }
     </style>
 </head>
 <body>
+    <div id="content">
     <div id="text_wrapper">
         <h1>Park City Utah</h1> 
 
-        <img id="mountain" alt="Mountain" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Park_City_overview.jpg"/>
+        
 
         <h2>What is so great about Park City?</h2> 
 
         <p>Park City Utah is an amazing Spot for a vaction it has amazing scenery with its village and from the mountains. Its a great spot in Utah because it has all year round activities like its snow resort which is a really big and has amazing vaiety in terrain and is overlal just fun (100% not bias). Also in the summer or hotter conditions Park City you can mountain bike on the hills which is a fun and a workout. Also Park Citys village is a great spot to stroll around and grab some grub.</p>
 
-        <img id="Mountain_2" alt="Park City Utah" src="https://parkcity.gov/home/showpublishedimage/52280/637455453827930000"/>
-
+        
         <h2>Why should you visit Park City?</h2> 
         <ul>
             <li>It has amazing ski resorts including Canyons village, Park City village, Deer Valley, and Woodward</li>
-            <li>It has amazing views</li>
-            <li>Park City also has an amazing food scene</li>
-            <li>Park City Mountain also has a zipline, rollercoaster, and a bob sleb type ride</li>
+            <li>It has amazing views on and off the mountain</li>
+            <li>Park City also has an amazing food scene with many restraunts with many varieties of food</li>
+            <li>Park City Mountain also has rides like a rollercoaster and zipline during the summer and winter</li>
         </ul>
-            <img id="Mountain_3" alt="Park City Utah" src="https://www.skiutah.com/blog/authors/lexi/ski-utah-resort-histories-park-city/pictures/160111%20-%20Jup-KK-ML-6%20(1).jpg/inline-display"/>
-        
 
+        <button id="button" onclick=""> For Additional Info Click On ME!</button>
     </div>
+    <div id="Image_wrapper">
+            <img id="Mountain_3" alt="Park City Utah" src="https://www.skiutah.com/blog/authors/lexi/ski-utah-resort-histories-park-city/pictures/160111%20-%20Jup-KK-ML-6%20(1).jpg/inline-display"/>
+            <img id="mountain" alt="Mountain" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Park_City_overview.jpg"/>
+            <img id="Mountain_2" alt="Park City Utah" src="https://parkcity.gov/home/showpublishedimage/52280/637455453827930000"/>
+    </div>
+
+  </div>  
 </body>
 </html>
